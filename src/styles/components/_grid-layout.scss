@@ -1,0 +1,9 @@
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    //temp
+    max-width: 898px;
+    margin: 0 auto;
+}

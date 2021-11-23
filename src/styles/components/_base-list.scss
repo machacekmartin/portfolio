@@ -1,0 +1,8 @@
+.base-list{
+    list-style-type: disc;
+    padding: 0 1.75rem;
+
+    > li {
+        padding-top: .75rem
+    }
+}

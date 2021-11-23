@@ -1,0 +1,23 @@
+.section-title{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    &:before, &:after{
+        content: '';
+        width: 1.75rem;
+        height: .5rem;
+        margin: 0 .75rem;
+        border-radius: .5rem;
+        background: $color_highlight;
+    }
+
+    &__text{
+        color: $color_base-text;
+
+        &--bright{
+            color: $color-base-background;
+        }
+    }
+}
