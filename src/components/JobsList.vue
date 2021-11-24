@@ -25,7 +25,15 @@ export default {
                     company: "Bluesoft",
                     position: "Frontend Developer",
                     duration: "2020-2021",
-                    stack: [],
+                    stack: [
+                        'vue.js',
+                        'html5',
+                        'sass',
+                        'kentico',
+                        '.net',
+                        'php',
+
+                    ],
                     duties: [
                         "Converting UI designs into usable & dynamic web components",
                         "Fixing and maintaining existing projects",
@@ -42,9 +50,7 @@ export default {
                         'html5',
                         'sass',
                         'kentico',
-                        '.net',
-                        'php',
-                        'data'
+   
                     ],
                     duties: [
                         "Converting UI designs into usable & dynamic web components",

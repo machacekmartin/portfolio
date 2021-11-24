@@ -39,6 +39,15 @@ export default {
                     technologies: ["Vue.js", "SASS", "HTML5", "ES6+"],
                     image: "https://www.atelierhorizont.com/storage/images/c16a1b4df2f4aa0800bb5efefbb7f0a7-2021-02-02-102640.jpg",
                 },
+                {
+                    type: "Web app",
+                    name: "Atelier Horizont",
+                    text: `Rezidence Písečnice, Hi, my name is Martin, 
+                            I’m from Czech Republic and I focus on Frontend 
+                            Dev & Apps in general  and I focus`,
+                    technologies: ["Vue.js", "SASS", "HTML5", "ES6+"],
+                    image: "https://www.atelierhorizont.com/storage/images/c16a1b4df2f4aa0800bb5efefbb7f0a7-2021-02-02-102640.jpg",
+                },
             ],
         };
     },

@@ -1,14 +1,4 @@
-.wave1{
-    aspect-ratio: 960/200;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../src/assets/svg/wave.svg');
 
-
-
-}
 
 .blob{
     aspect-ratio: 325/325;
@@ -18,3 +8,53 @@
     background-size: cover;
     background-image: url('../src/assets/svg/blob.svg');
 }
+
+/*
+
+.svg-image{
+    z-index: 1;
+    
+    &--fix-bottom{
+        padding-top: 15%;
+    }
+
+    &--fix-top{
+        padding-top: 12%;
+    }
+
+    &__background{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100%;
+
+        &--bubbles{
+            background-image: url('../src/assets/svg/background-bubbles.svg'); 
+        }
+    }
+
+    &__wave{
+        aspect-ratio: 500/100;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+
+
+        &--bottom{
+            top: 0;
+            background-image: url('../src/assets/svg/background-wave-1.svg');
+        }
+
+        &--top{
+            background-image: url('../src/assets/svg/background-wave-2.svg');
+        }
+    }
+}
+
+*/
