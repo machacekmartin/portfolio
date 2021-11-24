@@ -1,0 +1,31 @@
+.section-module{
+    overflow-x: hidden;
+    
+    &__content{
+        max-width: 919px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        padding: 7.5rem 0 4rem;
+        text-transform: uppercase;
+        color: $color_base-text;
+
+        &--bright{
+            color: $color-base-background;
+        }
+
+        &:before, &:after{
+            content: '';
+            width: 1.75rem;
+            height: .5rem;
+            margin: 0 .75rem;
+            border-radius: .5rem;
+            background: $color_highlight;
+        }
+    }
+}

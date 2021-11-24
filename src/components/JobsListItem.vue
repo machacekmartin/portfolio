@@ -1,14 +1,14 @@
 <template>
-    <div class="job-card">
-        <h4 class="job-card__position">{{ position }}</h4>
-        <div class="job-card__detail">
-            <p>{{ duration }}</p>
-            <p>@ {{ company }}</p>
+    <div class="jobs-list-item">
+        <h4 class="jobs-list-item__position">{{ position }}</h4>
+        <div class="jobs-list-item__detail">
+            <h5>{{ duration }}</h5>
+            <h5>@ {{ company }}</h5>
         </div>
-        <h5 class="job-card__category-header">Duties</h5>
+        <h5 class="jobs-list-item__category-header">Duties</h5>
         <base-list :items="duties"> </base-list>
 
-        <h5 class="job-card__category-header">Primary Tech Stack</h5>
+        <h5 class="jobs-list-item__category-header">Primary Tech Stack</h5>
         <badges-list :items="stack"></badges-list>
     </div>
 </template>

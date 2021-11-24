@@ -1,0 +1,83 @@
+.landing-banner{
+    display: flex;
+    padding: 12rem 0 8rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    &__image{
+        position: relative;
+
+        & > img{
+            position: relative;
+            width: 315px;
+            height: 315px;
+            margin-left: 3rem;
+            border-radius: 1.75rem;
+            object-fit: cover;
+            box-shadow: -5px 2px 20px -10px $color_base-darkness;
+            z-index: 1;
+        }
+
+        
+    }
+    &__backdrop{
+        position: absolute;
+        width: 100%;
+        left: -2rem;
+        top: 1rem;
+    }
+
+    &__info{
+        padding-left: 4rem;
+    }
+
+    &__fullname{
+        margin-top: 2rem;
+        font-style: italic;
+        font-weight: 800;
+        letter-spacing: 0;
+    }
+
+    &__description{
+        max-width: 400px;
+        margin: 1.5rem 0 2rem;
+        letter-spacing: .25px;
+        font-weight: 500;
+
+        color: $color_gray;
+    }
+
+    &__list{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-transform: uppercase;
+        color: $color_gray;
+    }   
+
+    &__link{
+        $self: &;
+        display: flex;
+        align-items: center;
+        margin-top: .75rem;
+
+        &:before{
+            content: '';
+            width: 1.25rem;
+            height: .5rem;
+            margin-right: .75rem;
+            border-radius: .5rem;
+            background-color: $color_gray;
+            transition: background-color .15s, width .15s;
+        }
+
+        &:hover{
+            color: $color-highlight;
+            
+            &#{$self}:before{
+                background-color: $color_highlight;
+                width: 1.5rem;
+            }
+        }
+    }
+}

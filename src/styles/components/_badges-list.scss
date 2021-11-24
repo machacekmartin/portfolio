@@ -1,0 +1,25 @@
+.badges-list{
+    $self: &;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    &--large{
+
+        #{ $self }__item{
+            width: 60px;
+            height: 60px;
+            border-radius: 1rem;
+        }
+
+    }
+
+    &__item{
+        width: 48px;
+        height: 48px;
+        margin: .5rem .5rem 0 0;
+        border-radius: .75rem;
+        background-color: $color_light-gray;
+        
+    }
+}

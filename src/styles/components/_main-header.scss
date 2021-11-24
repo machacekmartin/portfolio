@@ -1,0 +1,44 @@
+.main-header{
+    position: fixed;
+    width: 100%;
+    border-radius: 0 0 .75rem .75rem;
+    backdrop-filter: blur(.8rem);
+    background-color: rgba($color-base-background, .8);
+    z-index: 10;
+
+    &__wrapper{
+        display: flex;
+        max-width: 919px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        text-transform: uppercase;
+
+        & > span{
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            margin-right: .25rem;
+            border-radius: .5rem;
+            background: $color-gray;
+
+            &:last-child{
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__links{
+        display: flex;
+    }
+
+    &__link{
+        margin-left: 1rem;
+    }
+    
+}

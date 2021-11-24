@@ -2,7 +2,16 @@
 @import 'base';
 @import 'typography';
 
+@import 'components/main-header';
 @import 'components/base-list';
-@import 'components/section-title';
-@import 'components/job-card';
-@import 'components/grid-layout';
+@import 'components/badges-list';
+@import 'components/section-module';
+
+@import 'components/landing-banner';
+
+@import 'components/jobs-list';
+@import 'components/jobs-list-item';
+@import 'components/projects-list';
+@import 'components/projects-list-item';
+
+@import 'components/waves'
