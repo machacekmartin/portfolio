@@ -1,0 +1,123 @@
+<template>
+    <svg
+        viewBox="0 0 1600 1800"
+    >
+        <g>
+            <title>Layer 1</title>
+            <path
+                fill="#1b1d25"
+                stroke="null"
+                opacity="undefined"
+                d="m0,0l1600,0l0,1800l-1600,0l0,-1800z"
+                id="svg_1"
+            />
+            <g id="svg_2" fill="#272830">
+                <circle
+                    fill="#1f2128"
+                    id="svg_3"
+                    cy="275.59311"
+                    cx="222.1435"
+                    r="212.33372"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_4"
+                    cy="93.53058"
+                    cx="976.49578"
+                    r="66"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_5"
+                    cy="700.99995"
+                    cx="535.75665"
+                    r="87"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_6"
+                    cy="648.46801"
+                    cx="1239.15038"
+                    r="99"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_9"
+                    cy="416.48722"
+                    cx="452.68822"
+                    r="40.09416"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_10"
+                    cy="472.1606"
+                    cx="388.53503"
+                    r="19.97686"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_11"
+                    cy="53.30433"
+                    cx="894.08611"
+                    r="16.20487"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_12"
+                    cy="106.63488"
+                    cx="1068.91267"
+                    r="16.20487"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_13"
+                    cy="718.11877"
+                    cx="1360.06686"
+                    r="27.9054"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_14"
+                    cy="754.58138"
+                    cx="1311.03094"
+                    r="16.58941"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_15"
+                    cy="767.84403"
+                    cx="1272.82724"
+                    r="8.41674"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_16"
+                    cy="1217.35159"
+                    cx="1398.16226"
+                    r="187.92125"
+                />
+                <circle
+                    id="svg_17"
+                    cy="1091.06461"
+                    cx="1276.92269"
+                    r="63.1711"
+                    fill="#1b1d25"
+                />
+                <circle
+                    fill="#1f2128"
+                    id="svg_7"
+                    cy="1478.19777"
+                    cx="343.17422"
+                    r="183.42857"
+                />
+            </g>
+        </g>
+    </svg>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>

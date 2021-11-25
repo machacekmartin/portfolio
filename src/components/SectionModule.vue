@@ -1,20 +1,12 @@
 <template>
     <section class="section-module">
         <div class="section-module__background" v-if="svgBackground">
-            <!--<object :data="require('@/assets/svg/' + svgBackground + '.svg')" type="image/svg+xml"></object>
-            <img
-                :src="require('@/assets/svg/' + svgBackground + '.svg')"
-                alt="hello"
-                ref="background"
-            />-->
-            
-            <svg-component :file="svgBackground"></svg-component>
-
+            <component :is="svgBackground"></component>
         </div>
 
         <div class="section-module__transition" v-if="transitionTop">
             <img
-                :src="require('@/assets/svg/' + transitionTop + '.svg')"
+                :src="require('@/static/svg/' + transitionTop + '.svg')"
                 alt="hello"
             />
         </div>
@@ -31,7 +23,7 @@
 
         <div class="section-module__transition" v-if="transitionBottom">
             <img
-                :src="require('@/assets/svg/' + transitionBottom + '.svg')"
+                :src="require('@/static/svg/' + transitionBottom + '.svg')"
                 alt="hello"
             />
         </div>

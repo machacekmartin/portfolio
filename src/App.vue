@@ -17,7 +17,7 @@
         class="section-module--projects"
         transitionTop="background-wave-2"
         transitionBottom="background-wave-3"
-        svgBackground="background-bubbles"
+        svgBackground="svg-background-bubbles"
     >
         <template v-slot:title>Latest Projects</template>
         <template v-slot:body>
@@ -29,7 +29,7 @@
         headerColor="#1B1D25"
         class="section-module--jobs"
         transitionTop="background-wave-4"
-        svgBackground="background-jobs"
+        svgBackground="svg-background-clouds"
     >
         <template v-slot:title> Minor projects & previous jobs </template>
         <template v-slot:body>
