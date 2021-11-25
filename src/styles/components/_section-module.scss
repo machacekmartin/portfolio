@@ -1,10 +1,11 @@
 .section-module{
     position: relative;
     overflow-x: hidden;
-    
+
     &__content{
         max-width: 919px;
         margin: 0 auto;
+
     }
 
     &__title{
@@ -48,19 +49,11 @@
         z-index: -1;
         overflow: hidden;
 
-        & > svg{
-            position: absolute;
-            min-width: 100%;
+
+        & > img{
+            width: 100%;
             height: 100%;
-            padding-top: 100px;
-            
+            object-fit: cover;
         }
     }
-
-    &--jobs{
-        padding-bottom: 400px;
-    }
-
-
-
 }

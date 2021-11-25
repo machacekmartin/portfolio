@@ -42,9 +42,9 @@ export default {
                     ],
                 },
                 {
-                    company: "Bluesoft",
+                    company: "Firmo",
                     position: "Frontend Developer",
-                    duration: "2020-2021",
+                    duration: "2018",
                     stack: [
                         'vue.js',
                         'html5',

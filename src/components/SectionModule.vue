@@ -1,7 +1,10 @@
 <template>
     <section class="section-module">
         <div class="section-module__background" v-if="svgBackground">
-            <component :is="svgBackground"></component>
+            <img
+                :src="require('@/static/svg/' + svgBackground + '.svg')"
+                alt="hello"
+            />
         </div>
 
         <div class="section-module__transition" v-if="transitionTop">

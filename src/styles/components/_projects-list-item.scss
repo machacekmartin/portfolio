@@ -4,8 +4,11 @@
     display: flex;
     align-items: center;
     margin: 12rem 0;
-
     color: $color_base-background;
+
+    &:first-child{
+        margin-top: 6rem;
+    }
 
     &:nth-child(odd){
         #{ $self }__image{
