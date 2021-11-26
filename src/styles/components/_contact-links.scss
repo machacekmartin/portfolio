@@ -1,0 +1,19 @@
+.contact-links{
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        margin: 0 2rem;
+    }
+
+    &__link{
+        display: flex;
+        transition: transform .2s;
+        &:hover{
+            transform: scale(1.05)
+        }
+    }
+
+}
+    

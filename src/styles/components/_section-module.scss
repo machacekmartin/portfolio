@@ -1,4 +1,5 @@
 .section-module{
+    $self: &;
     position: relative;
     overflow-x: hidden;
 
@@ -29,6 +30,15 @@
             border-radius: .5rem;
             background: $color_highlight;
         }
+
+        &--pure{
+            text-transform: none;
+
+            &:before, &:after{
+                content: none;
+            }
+
+        }
     }
 
     &__transition{
@@ -55,5 +65,22 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    &--contact{
+        min-height: 400px;
+        
+
+        #{ $self }__background{
+            & > img {
+                object-position: top;
+            }
+        }
+
+        #{ $self }__title{
+            padding-top: 10rem;
+        }
+
+
     }
 }

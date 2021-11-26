@@ -2,7 +2,7 @@
     <main-header> </main-header>
 
     <section-module
-        class="section-module--landing"
+
         transitionBottom="background-wave-1"
     >
         <template v-slot:body>
@@ -14,7 +14,7 @@
 
     <section-module
         headerColor="#FEFEFE"
-        class="section-module--projects"
+
         transitionTop="background-wave-2"
         transitionBottom="background-wave-3"
         svgBackground="background-bubbles"
@@ -27,7 +27,7 @@
 
     <section-module
         headerColor="#1B1D25"
-        class="section-module--jobs"
+
         transitionTop="background-wave-4"
         transitionBottom="background-wave-5"
         svgBackground="background-clouds"
@@ -40,14 +40,16 @@
     </section-module>
 
     <section-module
-
         transitionTop="background-wave-6"
-        
+        svgBackground="background-depth"
+        :clearTitle="true"
+        headerColor="#FEFEFE"
     >
-        <template v-slot:title> My education </template>
+        <template v-slot:title> Call me. Text me. Mail me. </template>
         <template v-slot:body>
- 
+            <contact-options></contact-options>
         </template>
+
     </section-module>
 </template>
 
@@ -59,6 +61,7 @@ import ProjectsList from "./components/ProjectsList.vue";
 import MinorProjectsList from "./components/MinorProjectsList.vue";
 import BadgesList from "./components/BadgesList.vue";
 import SectionModule from "./components/SectionModule.vue";
+import ContactOptions from './components/ContactOptions.vue'
 
 export default {
     components: {
@@ -69,6 +72,7 @@ export default {
         MinorProjectsList,
         BadgesList,
         LandingBanner,
+        ContactOptions
     },
     data() {
         return {

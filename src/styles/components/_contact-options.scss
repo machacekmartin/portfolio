@@ -1,0 +1,29 @@
+.contact-options{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+
+    &__text{
+        text-align: center;
+        color: $color_subtle-darkness;
+        margin-top: 4rem;
+    }
+    
+    &__list{
+        display: flex; 
+    }
+
+    &__item{
+        margin: 0 2rem;
+    }
+
+    &__link{
+        display: flex;
+        transition: transform .2s;
+        &:hover{
+            transform: scale(1.05)
+        }
+    }
+}

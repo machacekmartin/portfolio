@@ -1,21 +1,15 @@
 <template>
     <section class="section-module">
         <div class="section-module__background" v-if="svgBackground">
-            <img
-                :src="require('@/static/svg/' + svgBackground + '.svg')"
-                alt="hello"
-            />
+            <svg-img :file="svgBackground"></svg-img>
         </div>
 
         <div class="section-module__transition" v-if="transitionTop">
-            <img
-                :src="require('@/static/svg/' + transitionTop + '.svg')"
-                alt="hello"
-            />
+            <svg-img :file="transitionTop"></svg-img>
         </div>
 
         <header v-if="hasTitleSlot">
-            <h3 class="section-module__title" :style="headerColorStyle">
+            <h3 class="section-module__title" :class="titlePureClass" :style="headerColorStyle">
                 <slot name="title"></slot>
             </h3>
         </header>
@@ -25,10 +19,7 @@
         </div>
 
         <div class="section-module__transition" v-if="transitionBottom">
-            <img
-                :src="require('@/static/svg/' + transitionBottom + '.svg')"
-                alt="hello"
-            />
+            <svg-img :file="transitionBottom"></svg-img>
         </div>
     </section>
 </template>
@@ -55,6 +46,11 @@ export default {
             type: String,
             required: false,
         },
+        clearTitle: {
+            type: Boolean,
+            required: false,
+            default: false
+        }
     },
     computed: {
         hasTransitionTop() {
@@ -69,6 +65,9 @@ export default {
         headerColorStyle() {
             return "color: " + this.headerColor;
         },
+        titlePureClass(){
+            return this.clearTitle ? 'section-module__title--pure' : ''
+        }
     },
 };
 </script>
