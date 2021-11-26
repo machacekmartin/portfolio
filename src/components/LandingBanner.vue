@@ -5,7 +5,9 @@
                 src="https://scontent.fprg5-1.fna.fbcdn.net/v/t1.6435-9/190447969_4211731342218392_4032012512850160404_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9qXNJ8JF-38AX9fgrCl&tn=P6wJVy3bHALTogKz&_nc_ht=scontent.fprg5-1.fna&oh=82e934fffd50108abc2133547eade509&oe=61C3EFE4"
                 alt=""
             />
-            <div class="landing-banner__backdrop blob"></div>
+            <div class="landing-banner__backdrop">
+                <svg-img file="blob"></svg-img>
+            </div>
         </div>
         <div class="landing-banner__info">
             <h1 class="landing-banner__fullname">{{ name }}</h1>
