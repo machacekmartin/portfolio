@@ -1,50 +1,75 @@
 .projects-list-item{
     $self: &;
     position: relative;
-    display: flex;
-    align-items: center;
-    margin: 12rem 0;
+
+    margin: 3rem 0;
     color: $color_base-background;
 
-    &:first-child{
-        margin-top: 6rem;
+    @media (min-width: 50rem){
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse;
+        margin: 12rem 0;
     }
+
+    &:first-child{
+        @media (min-width: 50rem){
+            margin-top: 6rem;
+        }
+    }
+
 
     &:nth-child(odd){
         #{ $self }__image{
-            margin-left: 5rem;
+            @media (min-width: 50rem){
+                margin-left: 5rem;
+            }
         }
     }
 
     &:nth-child(even){
-        flex-flow: row-reverse;
+        @media (min-width: 50rem){
+            flex-flow: row;
+        }
 
         #{ $self }__description{
-            margin-left: 5rem;
+            @media (min-width: 50rem){
+                margin-left: 5rem;
+            }
         }
 
         #{ $self }__image{
             & > img{
                 &:nth-child(2){
-                    right: 5rem;
-                    left: auto;
+                    @media (min-width: 50rem){
+                        right: 5rem;
+                        left: auto;
+                    }
                 }
             }
         }
     }
 
     &__description{
-       width: 50%;
+        margin-top: 1rem;
+        @media (min-width: 50rem){
+            width: 50%;
+        }
     }
 
     &__type{
         text-transform: uppercase;
-        color: $color_highlight
+        color: $color_highlight;
+        font-weight: bold;
     }
 
     &__name{
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
         font-style: italic;
+
+        @media (min-width: 50rem){
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__text{
@@ -54,15 +79,22 @@
 
     &__image{
         position: relative;
-        width: 50%;
+        
+        @media (min-width: 50rem){
+            width: 50%;
+        }
         
         & > img{
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 150px;
             object-fit: cover;
             border-radius: .75rem;
             z-index: 1;
+
+            @media (min-width: 50rem){
+                height: 300px;
+            }
 
             &:first-child{
                 box-shadow: 0 0 50px -5px $color_base-darkness;
@@ -70,13 +102,20 @@
 
             &:nth-child(2){
                 position: absolute;
-                width: 175%;
-                height: 500px;
-                left: 5rem;
-                top: 50%;
-                transform: translateY(-50%);
+                width: calc(100% + 1rem);
+                height: 80%;
+                left: -.5rem;
+                top: -15%;
                 filter: grayscale(.5) contrast(.8) brightness(.4);
-                z-index: 0
+                z-index: -1;
+
+                @media (min-width: 50rem){
+                    width: 175%;
+                    height: 160%;
+                    left: 5rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }

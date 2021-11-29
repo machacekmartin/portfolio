@@ -1,11 +1,11 @@
 <template>
     <section class="section-module">
         <div class="section-module__background" v-if="svgBackground">
-            <img :src="require('@/static/svg/' + svgBackground + '.svg')">
+            <img :src="require('@/static/svg/' + svgBackground + '.svg')" alt="Section background">
         </div>
 
         <div class="section-module__transition" v-if="transitionTop">
-           <img :src="require('@/static/svg/' + transitionTop + '.svg')">
+           <img :src="require('@/static/svg/' + transitionTop + '.svg')"  alt="Transition wave">
         </div>
 
         <header v-if="hasTitleSlot">
@@ -19,7 +19,7 @@
         </div>
 
         <div class="section-module__transition" v-if="transitionBottom">
-            <img :src="require('@/static/svg/' + transitionBottom + '.svg')">
+            <img :src="require('@/static/svg/' + transitionBottom + '.svg')"  alt="Transition wave">
         </div>
     </section>
 </template>

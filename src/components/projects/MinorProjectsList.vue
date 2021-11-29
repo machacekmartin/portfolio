@@ -20,29 +20,29 @@ export default {
         return {
             minorProjects: [
                 {
-                    image: 'https://winningestate.cz/wp-content/uploads/2020/06/06c_maura_popuvky.jpg',
+                    image: 'webp/pisecnice.webp',
                     name: 'CLI Tic Tac Toe',
                     description: 'Resizable Tic Tac Toe in Node.js. Supports win-detection & coop multiplay for > 2 players'
                 },
                 {
-                    image: 'https://winningestate.cz/wp-content/uploads/2020/06/06c_maura_popuvky.jpg',
+                    image: 'webp/pisecnice.webp',
                     name: 'IMG & MP4 to ASCII convertor ',
-                    description: 'Resizable Tic Tac Toe in Node.js. Supports win-detection & coop multiplay for > 2 players'
+                    description: 'Python CLI script for converting images and videos into ASCII format. Includes a simple bash script for playing output ASCII video'
                 },
                 {
-                    image: 'https://winningestate.cz/wp-content/uploads/2020/06/06c_maura_popuvky.jpg',
+                    image: 'webp/pisecnice.webp',
                     name: 'Resource Manager',
-                    description: 'Resizable Tic Tac Toe in Node.js. Supports win-detection & coop multiplay for > 2 players'
+                    description: 'Web App for managing files, code snippets and links. Vue.js, SASS (BEM), Vuex, Axios, Laravel, MySQL'
                 },
                 {
-                    image: 'https://winningestate.cz/wp-content/uploads/2020/06/06c_maura_popuvky.jpg',
+                    image: 'webp/pisecnice.webp',
                     name: 'Minimal Weather App',
-                    description: 'Resizable Tic Tac Toe in Node.js. Supports win-detection & coop multiplay for > 2 players'
+                    description: 'Simple weather app with Nativescript, Typescript and Vue.js. Weather data is retrieved from Open Weather Map '
                 },
                 {
-                    image: 'https://winningestate.cz/wp-content/uploads/2020/06/06c_maura_popuvky.jpg',
+                    image: 'webp/pisecnice.webp',
                     name: 'NPM Image Slider',
-                    description: 'Resizable Tic Tac Toe in Node.js. Supports win-detection & coop multiplay for > 2 players'
+                    description: 'Simple and easy to use Image slider NPM package using Vue.js and SASS'
                 },
 
             ]

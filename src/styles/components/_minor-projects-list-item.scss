@@ -1,15 +1,23 @@
 .minor-projects-list-item{
     $self: &;
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    flex-basis: calc((100% / 3) - 10px);
-    margin: 0 5px 6rem;
+    flex-flow: row;
+    align-items: flex-start;
+    margin: 0 5px 2rem;
+    flex-basis: 100%;
     cursor: pointer;
 
+    @media (min-width: 50rem){
+        flex-flow: column;
+        align-items: center;
+        flex-basis: calc((100% / 3) - 10px);
+        margin: 0 5px 6rem;
+    }
+
     &__image{
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
+        margin-right: 1rem;
         object-fit: cover;
         border-radius: .5rem; 
         transition: transform .15s;
@@ -17,24 +25,45 @@
         outline: .15rem solid $color_sublight;
         outline-offset: 5px;
         transition: .25s;
-    }
 
-    &__title{
-        margin: 1.5rem 0 .75rem;
-        font-style: italic;
-        text-align: center;
+        @media (min-width: 50rem){
+            width: 90px;
+            height: 90px;
+            margin: 0;
+        }
     }
 
     &__description{
-        text-align: center;
+       
+
+    }
+
+    &__title{
+        margin-bottom: .5rem;
+        font-style: italic;
+
+        @media (min-width: 50rem){
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    &__text{
+        @media (min-width: 50rem){
+            text-align: center;
+        }
+        
     }
 
     &:hover{
         #{ $self }__image{
-            outline-color: $color_base-background;
-            transform: scale(1.1);
-            transform-origin: center;
-            border-radius: 0;
+            @media (min-width: 50rem){
+                outline-color: $color_base-background;
+                transform: scale(1.1);
+                transform-origin: center;
+                border-radius: 0;
+            }
+            
         }
 
         #{ $self }__title{

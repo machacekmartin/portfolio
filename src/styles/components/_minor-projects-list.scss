@@ -1,9 +1,8 @@
 .minor-projects-list{
     display: flex;
-    flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     margin-bottom: 2rem;
 }

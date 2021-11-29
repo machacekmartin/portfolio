@@ -1,7 +1,7 @@
 <template>
     <ul class="badges-list" :class="largeStyle">
         <li class="badges-list__item"  v-for="item in items" :key="item" >
-            <a class="badges-list__link" :href="item.link" target="_blank">
+            <a class="badges-list__link" :href="item.link" target="_blank" rel="noopener">
                 <img :src="require('@/static/svg/icons/' + item.icon)" :alt="item.icon">
             </a>
         </li>

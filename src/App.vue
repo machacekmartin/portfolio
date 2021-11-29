@@ -4,12 +4,13 @@
     <section-module transitionBottom="background-wave-1">
         <template v-slot:body>
             <landing-banner></landing-banner>
-            <h4 class="up">My favourite technologies</h4>
+            <span class="up bold">My favourite technologies</span>
             <badges-list :items="preferedTechIcons" :large="true"></badges-list>
         </template>
     </section-module>
 
     <section-module
+        id="projects"
         headerColor="#FEFEFE"
         transitionTop="background-wave-2"
         transitionBottom="background-wave-3"
@@ -29,12 +30,13 @@
     >
         <template v-slot:title> Minor projects & previous jobs </template>
         <template v-slot:body>
-            <minor-projects-list></minor-projects-list>
-            <jobs-list></jobs-list>
+            <minor-projects-list id="minor"></minor-projects-list>
+            <jobs-list id="jobs"></jobs-list>
         </template>
     </section-module>
 
     <section-module
+        id="contact"
         transitionTop="background-wave-6"
         svgBackground="background-depth"
         :clearTitle="true"

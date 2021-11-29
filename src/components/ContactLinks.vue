@@ -4,10 +4,11 @@
             class="contact-links__item"
             :href="item.link"
             target="_blank"
+            rel="noopener"
             v-for="item in items"
             :key="item.icon"
         >
-            <img :src="require('@/static/svg/icons/' + item.icon)" />
+            <img :src="require('@/static/svg/icons/' + item.icon)" :alt="item.icon" />
         </a>
     </nav>
 </template>

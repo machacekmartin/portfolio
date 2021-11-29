@@ -1,9 +1,11 @@
 <template>
     <li class="minor-projects-list-item">
-        <img class="minor-projects-list-item__image" :src="image" alt="" />
+        <img class="minor-projects-list-item__image" :src="require('@/static/' + image)" :alt="image" />
 
-        <h4 class="minor-projects-list-item__title">{{ name }}</h4>
-        <p class="minor-projects-list-item__description">{{ description }}</p>
+        <div class="minor-projects-list-item__description">
+            <h4 class="minor-projects-list-item__title">{{ name }}</h4>
+            <p class="minor-projects-list-item__text">{{ description }}</p>
+        </div>
     </li>
 </template>
 

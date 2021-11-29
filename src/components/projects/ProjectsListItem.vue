@@ -1,22 +1,21 @@
 <template>
     <li class="projects-list-item">
+        <div class="projects-list-item__image">
+            <img :src="require('@/static/' + image)" :alt="image">
+            <img class="projects-list-item__backdrop" :src="require('@/static/' + image)" alt="Backdrop">
+        </div>
         <div class="projects-list-item__description">
-            <h4 class="projects-list-item__type">
+            <p class="projects-list-item__type">
                 {{ type }}
-            </h4>
+            </p>
             <h2 class="projects-list-item__name">
                 {{ name }}
             </h2>
             <p class="projects-list-item__text">
                 {{ text }}
             </p>
-            <h5>Technologies</h5>
+            <p class="bold">Technologies</p>
             <p class="projects-list-item__text">{{ technologiesString }}</p>
-        </div>
-
-        <div class="projects-list-item__image">
-            <img :src="image" alt="Project's image">
-            <img class="projects-list-item__backdrop" :src="image" alt="Backdrop">
         </div>
     </li>
 </template>

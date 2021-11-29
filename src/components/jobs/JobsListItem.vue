@@ -2,8 +2,8 @@
     <li class="jobs-list-item">
         <h4 class="jobs-list-item__position">{{ position }}</h4>
         <div class="jobs-list-item__detail">
-            <p>{{ duration }}</p>
-            <p>@ {{ company }}</p>
+            <span>{{ duration }}</span>
+            <span>@ {{ company }}</span>
         </div>
         <h5 class="jobs-list-item__category-header">Duties</h5>
         <ul class="jobs-list-item__duties">

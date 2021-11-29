@@ -6,7 +6,11 @@
     &__content{
         max-width: 919px;
         margin: 0 auto;
+        padding: 0 1rem;
 
+        @media (min-width: 50rem){
+            padding: 0 1.5rem;
+        }
     }
 
     &__title{
@@ -14,9 +18,14 @@
         flex-flow: row;
         align-items: center;
         justify-content: center;
-        padding: 5rem 0 8rem;
+        margin: 3rem 0;
         text-transform: uppercase;
+        text-align: center;
         color: $color_base-text;
+
+        @media (min-width: 50rem){
+            padding: 5rem 0 8rem;
+        }
 
         &--bright{
             color: $color-base-background;
@@ -37,7 +46,6 @@
             &:before, &:after{
                 content: none;
             }
-
         }
     }
 
@@ -80,7 +88,5 @@
         #{ $self }__title{
             padding-top: 10rem;
         }
-
-
     }
 }
