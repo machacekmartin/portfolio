@@ -11,9 +11,9 @@ html{
 
 body{
     background: $color_base-background;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
+    min-width: 320px;
 }
-
 
 ul {
     list-style-type: none;

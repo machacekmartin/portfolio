@@ -1,11 +1,17 @@
 <template>
     <li class="minor-projects-list-item">
-        <img class="minor-projects-list-item__image" :src="require('@/static/' + image)" :alt="image" />
+        <a class="minor-projects-list-item__link" :href="link" target="_blank" rel="noopener">
+            <img
+                class="minor-projects-list-item__image"
+                :src="require('@/static/' + image)"
+                :alt="image"
+            />
 
-        <div class="minor-projects-list-item__description">
-            <h4 class="minor-projects-list-item__title">{{ name }}</h4>
-            <p class="minor-projects-list-item__text">{{ description }}</p>
-        </div>
+            <div class="minor-projects-list-item__description">
+                <h4 class="minor-projects-list-item__title">{{ name }}</h4>
+                <p class="minor-projects-list-item__text">{{ description }}</p>
+            </div>
+        </a>
     </li>
 </template>
 
@@ -24,6 +30,10 @@ export default {
             type: String,
             required: true,
         },
+        link: {
+            type: String,
+            required: true
+        }
     },
 };
 </script>

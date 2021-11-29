@@ -1,26 +1,35 @@
 .the-header{
     position: fixed;
     width: 100%;
-    background-color: $color_base-background;
     border-radius: 0 0 .75rem .75rem;
     box-shadow: 0 -5px 15px -5px $color_subtle-darkness;
+    background-color: $color_base-background;
     z-index: 10;
 
     &__wrapper{
         display: flex;
+        justify-content: center;
         max-width: 919px;
         margin: 0 auto;
-        padding: .75rem 0;
+        padding: .5rem 1.5rem;
+
+        @media (min-width: 50rem){
+            padding: .75rem 1.5rem;
+        }
     }
 
     &__title{
-        display: flex;
+        display: none;
         align-items: center;
         margin-right: auto;
         text-transform: uppercase;
 
+        @media (min-width: 50rem){
+            display: flex;
+        }
+
         & > span{
-            display: inline-block;
+            display: none;
             width: 7px;
             height: 7px;
             margin-right: .25rem;
@@ -30,19 +39,10 @@
             &:last-child{
                 margin-right: 1rem;
             }
-        }
-    }
 
-    &__links{
-        display: flex;
-    }
-
-    &__link{
-        margin-left: 1.5rem;
-
-        & > img {
-            width: 28px;
-            height: 28px;
+            @media (min-width: 50rem){
+                display: inline-block;
+            }
         }
     }
 }

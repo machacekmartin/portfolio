@@ -10,12 +10,11 @@
 </template>
 
 <script>
-
-import ContactLinks from './ContactLinks.vue'
+import ContactLinks from "./ContactLinks.vue";
 
 export default {
     components: {
-        ContactLinks
+        ContactLinks,
     },
     data() {
         return {
@@ -28,15 +27,15 @@ export default {
                 },
                 {
                     icon: "facebook.svg",
-                    link: "https://www.linkedin.com/in/mmachacek/",
+                    link: "https://www.facebook.com/Macampp/",
                 },
                 {
                     icon: "github.svg",
-                    link: "https://www.linkedin.com/in/mmachacek/",
+                    link: "https://github.com/machacekmartin/",
                 },
                 {
                     icon: "instagram.svg",
-                    link: "https://www.linkedin.com/in/mmachacek/",
+                    link: "https://www.instagram.com/_machacekm_/",
                 },
             ],
         };

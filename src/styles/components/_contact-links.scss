@@ -2,10 +2,19 @@
     $self: &;
 
     &--large{
-
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
         #{ $self }__item{
-            width: 4rem;
-            margin: 0 2rem;
+            width: 3rem;
+            margin: .5rem .75rem;
+
+            @media (min-width: 50rem){
+                width: 4rem;
+                margin: 0 2rem;
+            }
         }
     }
 

@@ -3,12 +3,16 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
+
+    @media (min-width: 50rem){
+        padding-bottom: 10rem;
+    }
 
     &__text{
+        margin-top: 4rem;
         text-align: center;
         color: $color_subtle-darkness;
-        margin-top: 4rem;
     }
     
     &__list{

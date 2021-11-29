@@ -8,7 +8,10 @@
             v-for="item in items"
             :key="item.icon"
         >
-            <img :src="require('@/static/svg/icons/' + item.icon)" :alt="item.icon" />
+            <img
+                :src="require('@/static/svg/icons/' + item.icon)"
+                :alt="item.icon"
+            />
         </a>
     </nav>
 </template>
@@ -19,20 +22,17 @@ export default {
         large: {
             type: Boolean,
             required: false,
-            default: false
+            default: false,
         },
         items: {
             type: Array,
-            required: true
-        }
+            required: true,
+        },
     },
     computed: {
-        largeStyle(){
-            return this.large ? 'contact-links--large' : ''
-        }
-    }
+        largeStyle() {
+            return this.large ? "contact-links--large" : "";
+        },
+    },
 };
 </script>
-
-<style>
-</style>

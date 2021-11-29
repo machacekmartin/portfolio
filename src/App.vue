@@ -1,5 +1,5 @@
 <template>
-    <the-header> </the-header>
+    <the-header></the-header>
 
     <section-module transitionBottom="background-wave-1">
         <template v-slot:body>

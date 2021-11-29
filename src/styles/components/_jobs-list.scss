@@ -1,5 +1,9 @@
 .jobs-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
+
+    @media (min-width: 50rem){
+        grid-template-columns: 1fr 1fr;
+    }
 }

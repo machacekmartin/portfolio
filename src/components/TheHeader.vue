@@ -8,18 +8,16 @@
 
                 My Portfolio
             </h4>
-
-
             <contact-links :items="options"></contact-links>
         </div>
     </header>
 </template>
 
 <script>
-import ContactLinks from './ContactLinks.vue'
+import ContactLinks from "./ContactLinks.vue";
 export default {
     components: {
-        ContactLinks
+        ContactLinks,
     },
     data() {
         return {
@@ -30,17 +28,14 @@ export default {
                 },
                 {
                     icon: "facebook.svg",
-                    link: "https://www.linkedin.com/in/mmachacek/",
+                    link: "https://www.facebook.com/Macampp/",
                 },
                 {
                     icon: "github.svg",
-                    link: "https://www.linkedin.com/in/mmachacek/",
+                    link: "https://github.com/machacekmartin/",
                 },
             ],
         };
     },
 };
 </script>
-
-<style>
-</style>

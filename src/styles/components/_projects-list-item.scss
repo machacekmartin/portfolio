@@ -1,7 +1,6 @@
 .projects-list-item{
     $self: &;
     position: relative;
-
     margin: 3rem 0;
     color: $color_base-background;
 
@@ -17,7 +16,6 @@
             margin-top: 6rem;
         }
     }
-
 
     &:nth-child(odd){
         #{ $self }__image{

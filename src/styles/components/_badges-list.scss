@@ -1,21 +1,20 @@
 .badges-list{
     $self: &;
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     &--large{
+        margin-bottom: 4rem;
+
         #{ $self }__item{
             width: 50px;
             height: 50px;
             border-radius: .75rem;
-            margin-bottom: 4rem;
 
             @media (min-width: 50rem){
                 width: 60px;
                 height: 60px;
                 border-radius: 1rem;
-
             }
         }
     }
@@ -23,8 +22,8 @@
     &__item{
         position: relative;
         display: flex;
-        width: 40px;
-        height: 40px;
+        width: 43px;
+        height: 43px;
         margin: 1rem .5rem 0 0;
         border-radius: .75rem;
         overflow: hidden;
