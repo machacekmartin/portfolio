@@ -24,28 +24,22 @@ export default {
                 {
                     type: "Web app",
                     name: "Residence Pisecnice",
-                    text: `Rezidence Písečnice, Hi, my name is Martin, 
-                            I’m from Czech Republic and I focus on Frontend 
-                            Dev & Apps in general  and I focus`,
-                    technologies: ["Vue.js", "SASS", "HTML5", "ES6+"],
+                    text: `[IN DEV] Presentation website for real estate development.`,
+                    technologies: ["Vue.js", "Typescript", "Express", "SASS", "Nuxt.js"],
                     image: "webp/pisecnice.webp",
                 },
                 {
-                    type: "Admin web app, hybrid mobile app, api",
+                    type: "Admin web app, hybrid mobile app, REST api",
                     name: "Our Zoo",
-                    text: `Rezidence Písečnice, Hi, my name is Martin, 
-                            I’m from Czech Republic and I focus on Frontend 
-                            Dev & Apps in general  and I focus`,
-                    technologies: ["Vue.js", "SASS", "HTML5", "ES6+"],
+                    text: `Unifying Zoo system with web administration panel for employees and hybrid mobile application for zoo visitors. Currently private, contact me for access :)`,
+                    technologies: ["Lumen", "Stateless Rest API", "Vue.js", "Vuex",  "SASS", "MongoDB", "Cordova", "Leaflet & Mapbox", ],
                     image: "webp/zoo.webp",
                 },
                 {
-                    type: "Web app",
+                    type: "Web app with admin panel",
                     name: "Atelier Horizont",
-                    text: `Rezidence Písečnice, Hi, my name is Martin, 
-                            I’m from Czech Republic and I focus on Frontend 
-                            Dev & Apps in general  and I focus`,
-                    technologies: ["Vue.js", "SASS", "HTML5", "ES6+"],
+                    text: `Website for architecture company. Offers customizable content, projects with galleries, news and articles..`,
+                    technologies: ["Laravel", "SASS", "HTML5", "MySQL"],
                     image: "webp/atelier.webp",
                 },
             ],
