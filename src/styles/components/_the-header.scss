@@ -1,18 +1,16 @@
-.main-header{
+.the-header{
     position: fixed;
     width: 100%;
-
     background-color: $color_base-background;
     border-radius: 0 0 .75rem .75rem;
     box-shadow: 0 -5px 15px -5px $color_subtle-darkness;
-
     z-index: 10;
 
     &__wrapper{
         display: flex;
         max-width: 919px;
         margin: 0 auto;
-        padding: .75rem 1.75rem;
+        padding: .75rem 0;
     }
 
     &__title{
@@ -47,5 +45,4 @@
             height: 28px;
         }
     }
-    
 }

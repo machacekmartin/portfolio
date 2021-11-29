@@ -2,8 +2,7 @@
 @import 'base';
 @import 'typography';
 
-@import 'components/main-header';
-@import 'components/base-list';
+@import 'components/the-header';
 @import 'components/badges-list';
 @import 'components/section-module';
 
@@ -15,4 +14,5 @@
 @import 'components/projects-list-item';
 @import 'components/minor-projects-list';
 @import 'components/minor-projects-list-item';
-@import 'components/contact-options';
+@import 'components/the-footer';
+@import 'components/contact-links';

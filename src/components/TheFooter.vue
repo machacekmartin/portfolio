@@ -1,18 +1,8 @@
 <template>
-    <div class="contact-options">
-        <ul class="contact-options__list">
-            <li
-                class="contact-options__item"
-                v-for="option in options"
-                :key="option.icon"
-            >
-                <a class="contact-options__link" :href="option.link" target="__empty">
-                    <svg-img :file="'icons/' + option.icon"></svg-img>
-                </a>
-            </li>
-        </ul>
+    <div class="the-footer">
+        <contact-links :items="options" :large="true"></contact-links>
 
-        <div class="contact-options__text">
+        <div class="the-footer__text">
             <h4>{{ email }}</h4>
             <h4>{{ phone }}</h4>
         </div>
@@ -20,26 +10,32 @@
 </template>
 
 <script>
+
+import ContactLinks from './ContactLinks.vue'
+
 export default {
+    components: {
+        ContactLinks
+    },
     data() {
         return {
             phone: "+420 725 782 960",
             email: "macamp34@gmail.com",
             options: [
                 {
-                    icon: "linkedin",
+                    icon: "linkedin.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
                 {
-                    icon: "facebook",
+                    icon: "facebook.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
                 {
-                    icon: "github",
+                    icon: "github.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
                 {
-                    icon: "instagram",
+                    icon: "instagram.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
             ],
@@ -47,6 +43,3 @@ export default {
     },
 };
 </script>
-
-<style>
-</style>

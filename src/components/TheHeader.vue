@@ -1,43 +1,39 @@
 <template>
-    <header class="main-header">
-        <div class="main-header__wrapper">
-            <h4 class="main-header__title">
+    <header class="the-header">
+        <div class="the-header__wrapper">
+            <h4 class="the-header__title">
                 <span></span>
                 <span></span>
                 <span></span>
 
                 My Portfolio
             </h4>
-            <nav class="main-header__links">
-                <a
-                    class="main-header__link"
-                    :href="option.link"
-                    target="_blank"
-                    v-for="option in options"
-                    :key="option.icon"
-                >
-                    <svg-img :file="'icons/' + option.icon"></svg-img>
-                </a>
-            </nav>
+
+
+            <contact-links :items="options"></contact-links>
         </div>
     </header>
 </template>
 
 <script>
+import ContactLinks from './ContactLinks.vue'
 export default {
+    components: {
+        ContactLinks
+    },
     data() {
         return {
             options: [
                 {
-                    icon: "linkedin",
+                    icon: "linkedin.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
                 {
-                    icon: "facebook",
+                    icon: "facebook.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
                 {
-                    icon: "github",
+                    icon: "github.svg",
                     link: "https://www.linkedin.com/in/mmachacek/",
                 },
             ],

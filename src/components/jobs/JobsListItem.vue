@@ -6,19 +6,23 @@
             <p>@ {{ company }}</p>
         </div>
         <h5 class="jobs-list-item__category-header">Duties</h5>
-        <base-list :items="duties"> </base-list>
+        <ul class="jobs-list-item__duties">
+            <li v-for="item in duties" :key="item">
+                <p>{{ item }}</p>
+            </li>
+        </ul>
 
-        <h5 class="jobs-list-item__category-header">Primary Tech Stack</h5>
-        <badges-list :items="stack"></badges-list>
+        <div class="jobs-list-item__stack">
+            <h5 class="jobs-list-item__category-header">Primary Tech Stack</h5>
+            <badges-list :items="stack"></badges-list>
+        </div>
     </li>
 </template>
 
 <script>
-import BaseList from "./BaseList.vue";
-import BadgesList from "./BadgesList.vue";
+import BadgesList from "../BadgesList.vue";
 export default {
     components: {
-        "base-list": BaseList,
         "badges-list": BadgesList,
     },
     props: {

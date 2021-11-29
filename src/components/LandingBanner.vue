@@ -6,7 +6,7 @@
                 alt=""
             />
             <div class="landing-banner__backdrop">
-                <svg-img file="blob"></svg-img>
+                <img :src="require('@/static/svg/blob.svg')">
             </div>
         </div>
         <div class="landing-banner__info">
@@ -15,8 +15,8 @@
 
             <nav class="landing-banner__list">
                 <a class="landing-banner__link" href=""><h4>My work</h4></a>
-                <a class="landing-banner__link" href=""><h4>Previous Jobs</h4></a>
-                <a class="landing-banner__link" href=""><h4>Education</h4></a>
+                <a class="landing-banner__link" href=""><h4>Minor projects</h4></a>
+                <a class="landing-banner__link" href=""><h4>Previous jobs</h4></a>
                 <a class="landing-banner__link" href=""><h4>Contact</h4></a>
             </nav>
         </div>
@@ -34,6 +34,3 @@ export default {
     },
 };
 </script>
-
-<style>
-</style>

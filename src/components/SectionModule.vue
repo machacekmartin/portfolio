@@ -1,11 +1,11 @@
 <template>
     <section class="section-module">
         <div class="section-module__background" v-if="svgBackground">
-            <svg-img :file="svgBackground"></svg-img>
+            <img :src="require('@/static/svg/' + svgBackground + '.svg')">
         </div>
 
         <div class="section-module__transition" v-if="transitionTop">
-            <svg-img :file="transitionTop"></svg-img>
+           <img :src="require('@/static/svg/' + transitionTop + '.svg')">
         </div>
 
         <header v-if="hasTitleSlot">
@@ -19,7 +19,7 @@
         </div>
 
         <div class="section-module__transition" v-if="transitionBottom">
-            <svg-img :file="transitionBottom"></svg-img>
+            <img :src="require('@/static/svg/' + transitionBottom + '.svg')">
         </div>
     </section>
 </template>
@@ -53,12 +53,6 @@ export default {
         }
     },
     computed: {
-        hasTransitionTop() {
-            return this.$slots.transitionTop;
-        },
-        hasTransitionBottom() {
-            return this.$slots.transitionBottom;
-        },
         hasTitleSlot() {
             return this.$slots.title;
         },

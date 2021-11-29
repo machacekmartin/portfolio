@@ -1,20 +1,16 @@
 <template>
-    <main-header> </main-header>
+    <the-header> </the-header>
 
-    <section-module
-
-        transitionBottom="background-wave-1"
-    >
+    <section-module transitionBottom="background-wave-1">
         <template v-slot:body>
             <landing-banner></landing-banner>
-            <h4 class="up">My preffered technologies</h4>
-            <badges-list :items="preferedTech" :large="true"></badges-list>
+            <h4 class="up">My favourite technologies</h4>
+            <badges-list :items="preferedTechIcons" :large="true"></badges-list>
         </template>
     </section-module>
 
     <section-module
         headerColor="#FEFEFE"
-
         transitionTop="background-wave-2"
         transitionBottom="background-wave-3"
         svgBackground="background-bubbles"
@@ -27,7 +23,6 @@
 
     <section-module
         headerColor="#1B1D25"
-
         transitionTop="background-wave-4"
         transitionBottom="background-wave-5"
         svgBackground="background-clouds"
@@ -47,36 +42,60 @@
     >
         <template v-slot:title> Call me. Text me. Mail me. </template>
         <template v-slot:body>
-            <contact-options></contact-options>
+            <the-footer></the-footer>
         </template>
-
     </section-module>
 </template>
 
 <script>
-import MainHeader from "./components/MainHeader.vue";
-import JobsList from "./components/JobsList.vue";
+import TheHeader from "./components/TheHeader.vue";
+import JobsList from "./components/jobs/JobsList.vue";
 import LandingBanner from "./components/LandingBanner.vue";
-import ProjectsList from "./components/ProjectsList.vue";
-import MinorProjectsList from "./components/MinorProjectsList.vue";
+import ProjectsList from "./components/projects/ProjectsList.vue";
+import MinorProjectsList from "./components/projects/MinorProjectsList.vue";
 import BadgesList from "./components/BadgesList.vue";
 import SectionModule from "./components/SectionModule.vue";
-import ContactOptions from './components/ContactOptions.vue'
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
     components: {
-        MainHeader,
+        TheHeader,
         SectionModule,
         JobsList,
         ProjectsList,
         MinorProjectsList,
         BadgesList,
         LandingBanner,
-        ContactOptions
+        TheFooter,
     },
     data() {
         return {
-            preferedTech: ["vue.js", "html5", "sass", "JS", ""],
+            preferedTechIcons: [
+                {
+                    link: "https://vuejs.org/",
+                    icon: "vue.svg",
+                },
+                {
+                    link: "https://sass-lang.com/",
+                    icon: "sass.svg",
+                },
+                {
+                    link: "https://html5.org/",
+                    icon: "html5.svg",
+                },
+                {
+                    link: "https://www.typescriptlang.org/",
+                    icon: "typescript.svg",
+                },
+                {
+                    link: "https://graphql.org/",
+                    icon: "graphql.svg",
+                },
+                {
+                    link: "https://www.python.org/",
+                    icon: "python.svg",
+                },
+            ],
         };
     },
 };
