@@ -25,7 +25,7 @@ export default {
                     type: "Web app",
                     name: "Residence Pisecnice",
                     text: `[IN DEV] Presentation website for real estate development.`,
-                    technologies: ["Vue.js", "Typescript", "Express", "SASS", "Nuxt.js"],
+                    technologies: ["Vue.js", "Typescript", "Vuex", "Tailwind CSS", "Firebase"],
                     image: "webp/pisecnice.webp",
                 },
                 {
