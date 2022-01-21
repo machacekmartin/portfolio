@@ -1,7 +1,10 @@
 <template>
     <the-header></the-header>
 
-    <section-module transitionBottom="background-wave-1">
+    <section-module 
+        transitionBottom="background-wave-1"
+        svgBackground="background-clouds"
+    >
         <template v-slot:body>
             <landing-banner></landing-banner>
             <span class="up bold">My favourite technologies</span>
